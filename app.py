@@ -57,7 +57,7 @@ st.header("Advanced section")
 
 if REPORT_PATH.exists():
     with open("welcome_pool.html", "rb") as f:
-        st.download_button("Pobierz raport", f, file_name="welcome_pool.html")
+        st.download_button("Download report", f, file_name="welcome_pool.html")
 
 elif st.button("Generate Ydata-profile"):
     with st.spinner("Generating report, please wait..."):
